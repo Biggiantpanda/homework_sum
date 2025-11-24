@@ -1,0 +1,7 @@
+{
+  "name": "班级作业展示",
+  "description": "一个智能的学生作业提交与展示平台，由 Gemini AI 提供内容分析支持。",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
