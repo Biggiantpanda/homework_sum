@@ -10,7 +10,7 @@ export interface HomeworkItem {
   studentName: string;
   fileName: string;
   fileType: FileType;
-  dataUrl: string; // Base64 data
+  dataUrl: string; // This will now be a Firebase Storage URL for new uploads
   uploadDate: number;
   
   // AI Generated Metadata
@@ -26,4 +26,13 @@ export interface AiAnalysisResult {
   comment: string;
 }
 
-export type ViewState = 'GALLERY' | 'UPLOAD' | 'LOGIN';
+export interface FirebaseConfig {
+  apiKey: string;
+  authDomain: string;
+  projectId: string;
+  storageBucket: string;
+  messagingSenderId: string;
+  appId: string;
+}
+
+export type ViewState = 'GALLERY' | 'UPLOAD' | 'LOGIN' | 'SETUP';
